@@ -95,6 +95,102 @@ export const builtinPlugins: PluginManifest[] = _compact([
     'description.zh-CN': '增加预获取的图标，适用于内网环境',
     requireRestart: true,
   },
+  {
+    label: 'Livekit',
+    name: 'com.msgbyte.livekit',
+    url: '{BACKEND}/plugins/com.msgbyte.livekit/index.js',
+    icon: '{BACKEND}/plugins/com.msgbyte.livekit/assets/icon.png',
+    documentUrl: 'https://tailchat.msgbyte.com/docs/advanced-usage/plugins/com.msgbyte.livekit',
+    version: '0.0.0',
+    author: 'moonrailgun',
+    description: 'Adds Livekit, which provides voice chat, video chat, and screensharing.',
+    requireRestart: true
+  },
+  {
+    label: 'Link Embeds',
+		'label.zh-CN': 'Url元数据展示',
+		name: 'com.msgbyte.linkmeta',
+		url: '{BACKEND}/plugins/com.msgbyte.linkmeta/index.js',
+		version: '0.0.0',
+		author: 'msgbyte',
+		description: 'Parse and display link information in chat as an embed.',
+		'description.zh-CN': '解析并获取在聊天信息中的url信息概述，如标题/概述/缩略图, 支持媒体路径，直接显示媒体播放器(特殊支持bilibili，自动加载b站iframe播放器)',
+		requireRestart: false
+  },
+	{
+		label: 'Miaolang',
+		'label.zh-CN': '喵语言',
+		name: 'com.msgbyte.miaolang',
+		url: '/plugins/com.msgbyte.miaolang/index.js',
+		version: '0.0.0',
+		author: 'msgbyte',
+		description: 'Use by going to the media player and selecting \'Meow Meow\'. This will encrypt the sent text, and people who don\'t have the plugin installed will see \'Meow~\' in the place of the encrypted message.',
+		documentUrl: '/plugins/com.msgbyte.miaolang/README.md',
+		requireRestart: false
+	},
+	{
+		label: 'Discover',
+		'label.zh-CN': '发现群组',
+		name: 'com.msgbyte.discover',
+		url: '{BACKEND}/plugins/com.msgbyte.discover/index.js',
+		version: '0.0.0',
+		author: 'moonrailgun',
+		description: 'Add Discover panel which can help user found groups',
+		'description.zh-CN': '增加一个发现面板，用于探索公开的群组',
+		requireRestart: true
+	},
+	{
+		label: 'Simple Notify Bot',
+		'label.zh-CN': '简易机器人',
+		name: 'com.msgbyte.simplenotify',
+		url: '{BACKEND}/plugins/com.msgbyte.simplenotify/index.js',
+		icon: '/images/avatar/robot.webp',
+		version: '0.0.0',
+		author: 'moonrailgun',
+		description: 'A simple generic notification bot that sends messages directly to groups. To demo this, create a guild and a bot, then use https://github.com/powermaker450/tailchat-bot-interactor',
+		'description.zh-CN': '一个简单的通用通知机器人, 用于直接向群组发送消息',
+		requireRestart: true
+	},
+	{
+		label: 'Drawing plugin',
+		'label.zh-CN': '绘图插件',
+		name: 'com.msgbyte.draw',
+		url: '/plugins/com.msgbyte.draw/index.js',
+		version: '0.0.0',
+		author: 'msgbyte',
+		description: 'Allows sending custom drawings',
+		'description.zh-CN': '允许发送自定义绘图',
+		requireRestart: false
+	},
+	{
+		label: 'User Location',
+		'label.zh-CN': '用户地理位置',
+		name: 'com.msgbyte.user.location',
+		url: '/plugins/com.msgbyte.user.location/index.js',
+		version: '0.0.0',
+		author: 'moonrailgun',
+		description: 'Allows the user to add their general location to their about me.',
+		'description.zh-CN': '为用户信息增加地理位置记录',
+		requireRestart: true
+	},
+  {
+    label: 'Video Embeds',
+    name: 'cn.ssdcc.tailchat.video',
+    url: 'https://povario.com/plugins/cn.ssdcc.tailchat.video/index.js',
+    version: '0.0.0',
+    author: 'ssdcc',
+    description: 'Allows the sending and playing of video embeds.',
+    requireRestart: true
+  },
+  {
+    label: 'App Integration',
+    name: 'com.msgbyte.integration',
+    url: '/plugins/com.msgbyte.integration/index.js',
+    version: '0.0.0',
+    author: 'moonrailgun',
+    description: 'Add apps created by developers right to your guild.',
+    requireRestart: true
+  },
   // isOffical
   isOffical && {
     label: 'Posthog',
